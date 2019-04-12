@@ -1,11 +1,12 @@
 **want**
 
 Run some interesting commands without install. (`want` saves me a lot of time.)
+
 `want` was inspired by [zeit/install-node](https://github.com/zeit/install-node).
 
 <br/>
 
-## Usage
+### Usage
 
 **set alias once**
 
