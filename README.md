@@ -13,16 +13,16 @@ Try once: `curl -s https://want.now.sh | bash -s --`
 
 **set alias once**
 
-`alias want(){curl -sd "$*" https://want.now.sh | bash -s --}`
+`alias want () { curl -sd "$*" https://want.now.sh | bash -s --; }`
 
 **OR, set to bashrc**
 
-`echo 'want(){curl -sd "$*" https://want.now.sh | bash -s --}' >> ~/.bashrc`
+`echo 'want () { curl -sd "$*" https://want.now.sh | bash -s --; }' >> ~/.bashrc`
 `source ~/.bashrc`
 
 **OR, set to zshrc**
 
-`echo 'want(){curl -sd "$*" https://want.now.sh | bash -s --}' >> ~/.zshrc`
+`echo 'want () { curl -sd "$*" https://want.now.sh | bash -s --; }' >> ~/.zshrc`
 `source ~/.zshrc`
 
 <br/>
