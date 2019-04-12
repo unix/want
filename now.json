@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "name": "want",
+  "alias": "want.now.sh",
+  "builds": [
+    { "src": "index.js", "use": "now-micro" },
+    { "src": "**/*.sh", "use": "@now/static" }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "index.js" }
+  ]
+}

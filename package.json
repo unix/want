@@ -1,0 +1,19 @@
+{
+  "name": "want",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/WittBulter/want",
+  "author": "WittBulter <nanazuimeng123@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "micro-dev index.js",
+    "release": "now --target=production"
+  },
+  "dependencies": {
+    "micro": "^9.3.3"
+  },
+  "devDependencies": {
+    "@types/micro": "^7.3.3",
+    "micro-dev": "^3.0.0"
+  }
+}
