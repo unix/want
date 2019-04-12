@@ -1,1 +1,0 @@
-ps -e -o pid,args | grep -E "node |iojs |PM2 " | grep -v get_node_processes | grep -v grep
