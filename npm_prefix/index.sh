@@ -15,10 +15,10 @@ if ! hash node 2>/dev/null; then
 	err 'not found nodejs. exit.'
 fi
 
-if ! grep -q "${NPM_BIN}" ~/.bashrc; then
+if ! grep -Fxq "${NPM_BIN}" ~/.bashrc; then
   echo "${NPM_BIN}" >> ~/.bashrc
 fi
-if ! grep -q "${NPM_LIB}" ~/.bashrc; then
+if ! grep -Fxq "${NPM_LIB}" ~/.bashrc; then
   echo "${NPM_LIB}" >> ~/.bashrc
 fi
 npm config set prefix "~/${PACKAGES}"

@@ -5,13 +5,13 @@ LINT="$(tput smul 2>/dev/null || echo '')"
 BOLD="$(tput bold 2>/dev/null || echo '')"
 
 install_to_zsh() {
-  if ! grep -q "${BIN}" ~/.zshrc; then
+  if ! grep -Fxq "${BIN}" ~/.zshrc; then
     echo "${BIN}" >> ~/.zshrc
   fi
 }
 
 install_to_bash() {
-  if ! grep -q "${BIN}" ~/.bashrc; then
+  if ! grep -Fxq "${BIN}" ~/.bashrc; then
     echo "${BIN}" >> ~/.bashrc
   fi
 }
