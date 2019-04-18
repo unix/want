@@ -41,6 +41,9 @@ echo ''`
 
 module.exports = async (req, res) => {
   let param = await text(req)
+  if (req.url === '/.as') {
+    param = 'install_want'
+  }
   if (!param || param === '/') return welcome
   if (param === 'ls') return commands
   const sh = join(__dirname, param.replace(/[%20|' ']/g, '_'), 'index.sh')

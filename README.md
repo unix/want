@@ -4,26 +4,14 @@ Run some interesting commands without install. (`want` saves me a lot of time.)
 
 `want` was inspired by [zeit/install-node](https://github.com/zeit/install-node).
 
-Try once: `curl -s https://want.now.sh | bash -s --`
 
 <br/>
 <br/>
 
 ### Usage
 
-**set alias once**
+run `curl -s https://want.now.sh/.as | bash`.
 
-`alias want () { curl -sd "$*" https://want.now.sh | bash -s --; }`
-
-**OR, set to bashrc**
-
-`echo 'want () { curl -sd "$*" https://want.now.sh | bash -s --; }' >> ~/.bashrc`
-`source ~/.bashrc`
-
-**OR, set to zshrc**
-
-`echo 'want () { curl -sd "$*" https://want.now.sh | bash -s --; }' >> ~/.zshrc`
-`source ~/.zshrc`
 
 <br/>
 
