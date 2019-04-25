@@ -7,12 +7,14 @@ BOLD="$(tput bold 2>/dev/null || echo '')"
 install_to_zsh() {
   if ! grep -Fxq "${BIN}" ~/.zshrc; then
     echo "${BIN}" >> ~/.zshrc
+    source ~/.zshrc
   fi
 }
 
 install_to_bash() {
   if ! grep -Fxq "${BIN}" ~/.bashrc; then
     echo "${BIN}" >> ~/.bashrc
+    source ~/.bashrc
   fi
 }
 
