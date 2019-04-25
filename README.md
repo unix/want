@@ -10,8 +10,15 @@ Run some interesting commands without install. (`want` saves me a lot of time.)
 
 ### Usage
 
-run `curl -s https://want.now.sh/.as | bash`.
+- use zsh: 
 
+    `echo 'want () { curl -sd "$*" https://want.now.sh | bash -s --; }' >> ~/.zshrc`
+    `source ~/.zshrc`
+
+- use bash:
+
+    `echo 'want () { curl -sd "$*" https://want.now.sh | bash -s --; }' >> ~/.bashrc`
+    `source ~/.bashrc`
 
 <br/>
 

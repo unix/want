@@ -4,18 +4,11 @@ NO="$(tput sgr0 2>/dev/null || echo '')"
 LINT="$(tput smul 2>/dev/null || echo '')"
 BOLD="$(tput bold 2>/dev/null || echo '')"
 
-install_to_zsh() {
-  if ! grep -Fxq "${BIN}" ~/.zshrc; then
-    echo "${BIN}" >> ~/.zshrc
-    source ~/.zshrc
-  fi
-}
-
 install_to_bash() {
   if ! grep -Fxq "${BIN}" ~/.bashrc; then
     echo "${BIN}" >> ~/.bashrc
-    source ~/.bashrc
   fi
+  source ~/.bashrc > /dev/null 2>&1
 }
 
 success() {
@@ -23,13 +16,11 @@ success() {
   echo ""
 }
 
-if test -s ~/.zshrc; then
-  install_to_zsh
-  success
-  exit
+if [[ ! -f ~/.bashrc ]]; then
+  touch ~/.bashrc
 fi
 
-if test -s ~/.bashrc; then
+if [[ -f ~/.bashrc ]]; then
   install_to_bash
   success
   exit
