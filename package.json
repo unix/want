@@ -2,8 +2,8 @@
   "name": "want",
   "version": "1.2.1",
   "main": "index.js",
-  "repository": "https://github.com/WittBulter/want",
-  "author": "WittBulter <nanazuimeng123@gmail.com>",
+  "repository": "https://github.com/unix/want",
+  "author": "unix <lambdas.dev@gmail.com>",
   "license": "MIT",
   "scripts": {
     "start": "micro-dev index.js",
