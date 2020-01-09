@@ -6,14 +6,9 @@
   "author": "unix <lambdas.dev@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "micro-dev index.js",
+    "start": "now dev",
     "release": "now --prod"
   },
-  "dependencies": {
-    "micro": "^9.3.3"
-  },
-  "devDependencies": {
-    "@types/micro": "^7.3.3",
-    "micro-dev": "^3.0.0"
-  }
+  "dependencies": {},
+  "devDependencies": {}
 }
