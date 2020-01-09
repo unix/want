@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "start": "micro-dev index.js",
-    "release": "now --target=production"
+    "release": "now --prod"
   },
   "dependencies": {
     "micro": "^9.3.3"
