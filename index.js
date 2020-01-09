@@ -5,7 +5,7 @@ const pkg = require('./package')
 const getFolders = () => readdirSync(__dirname)
   .filter(item => {
     const dir = join(__dirname, item)
-    return statSync(dir).isDirectory() && /^(?!\.|node_modules)/.test(item)
+    return statSync(dir).isDirectory() && /^(?!\.|node_modules|user)/.test(item)
   })
 const color = "$(tput setaf 2 2>/dev/null || echo '')"
 const cyan="$(tput setaf 6 2>/dev/null || echo '')"
