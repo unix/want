@@ -1,7 +1,6 @@
 {
   "version": 2,
   "name": "want",
-  "alias": "want.now.sh",
   "regions": ["hnd1"],
   "builds": [
     { "src": "index.js", "use": "now-micro" },
