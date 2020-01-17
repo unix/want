@@ -44,6 +44,8 @@ echo ''`
 }
 
 module.exports = async (req, res) => {
+  if (!req.body || typeof req.body !== 'object') return res.send(welcome)
+  
   const keyword = Object.keys(req.body)
     .join('_')
     .replace(/[%20|' ']/g, '_')
