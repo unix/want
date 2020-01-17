@@ -1,6 +1,6 @@
 {
   "name": "want",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "main": "index.js",
   "repository": "https://github.com/unix/want",
   "author": "unix <lambdas.dev@gmail.com>",
