@@ -20,13 +20,13 @@ const bold="$(tput bold 2>/dev/null || echo '')"
 const commands = `
 echo "${gray}All commands:${nocolor}"
 echo "  ${bold}${getFolders().join(', ')}\n"
-echo "${gray}> Input [${color}want <Command>${nocolor}${gray}] to run/search."
+echo "${gray}> Input [${color}want <Command>${nocolor}${gray}] to run/search.${nocolor}"
 echo ""`
 const welcome = `
 echo "\n  ${background}${white} WANT ${nocolor} "
 echo "  -- Commands for human 😘😘 \n"
 echo "${bold}${gray}  ${bold}version: ${pkg.version}"
-echo "${bold}${gray}  ${bold}read & help: ${pkg.repository}\n"`
+echo "${bold}${gray}  ${bold}read & help: ${pkg.repository}${nocolor}\n"`
 
 const notFound = param => {
   const name = param.replace(/\?$/, '')
@@ -38,7 +38,7 @@ const notFound = param => {
     str += `
 echo "${bold}${gray}Do you want ${nocolor}👉 "
 echo "  ${results.join(', ')}"
-echo ''`
+echo ''${nocolor}`
   }
   return str
 }
