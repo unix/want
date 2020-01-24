@@ -1,12 +1,11 @@
+<img src="demo.webp" width="600" height="300" />
+
 ## want
 
 Run any commands without install.
 
 <br/>
 
-<img src="demo.webp">
-
-<br/>
 <br/>
 
 ### Usage
