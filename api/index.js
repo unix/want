@@ -24,7 +24,7 @@ echo "${gray}> Input [${color}want <Command>${nocolor}${gray}] to run/search.${n
 echo ""`
 const welcome = `
 echo "\n  ${background}${white} WANT ${nocolor} "
-echo "  -- Commands for human 😘😘 \n"
+echo "  -- Commands for humans 😘😘 \n"
 echo "${bold}${gray}  ${bold}version: ${pkg.version}"
 echo "${bold}${gray}  ${bold}read & help: ${pkg.repository}${nocolor}\n"`
 
