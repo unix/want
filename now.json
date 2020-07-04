@@ -1,11 +1,10 @@
 {
   "version": 2,
-  "name": "want",
   "regions": ["hnd1"],
   "functions": {
     "api/index.js": {
-      "maxDuration": 20,
-      "runtime": "@now/node@1.3.4",
+      "maxDuration": 10,
+      "runtime": "@now/node@1.7.1",
       "includeFiles": "**/*.sh"
     }
   },
