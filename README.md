@@ -4,6 +4,8 @@
 
 Run any commands without install.
 
+Do you need to add any new scripts? [Please let me know](https://github.com/unix/want/issues/new)
+
 <br/>
 
 <br/>
