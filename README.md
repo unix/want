@@ -23,6 +23,18 @@ Do you need to add any new scripts? [Please let me know](https://github.com/unix
     `echo 'want () { curl -sd "$*" https://want.now.sh | bash -s --; }' >> ~/.bashrc`
 
     `source ~/.bashrc`
+    
+- `fish` user:
+
+  Insert the following command in `~/.config/fish/config.fish`
+  
+  ```fish
+  function want
+    curl -sd $argv https://want.now.sh | bash -s --
+  end
+  ```
+  
+  and run `source ~/.config/fish/config.fish`
 
 - use with sudo:
 
