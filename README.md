@@ -2,68 +2,70 @@
 
 ## want
 
-Run any commands without install.
+Run the shell command from GitHub without install.
 
-Do you need to add any new scripts? [Please let me know](https://github.com/unix/want/issues/new)
+Want is the tool I used to manage shell commands, you can try using Want by following the documentation below,
+or by [adding some new commands](https://github.com/unix/want/issues/new). If you need to manage all the content yourself,
+fork this repository and redeploy it.
 
 <br/>
 
-<br/>
+### Setup
 
-### Usage
+Depending on your terminal, choose a way to install:
 
-- `zsh` user:
+- For "ZSH" users:
 
-    `echo 'want () { curl -sd "$*" https://want.now.sh | bash -s --; }' >> ~/.zshrc`
+  `echo 'want () { curl -sd "$*" https://want.unix.bio | bash -s --; }' >> ~/.zshrc`
 
-    `source ~/.zshrc`
+  `source ~/.zshrc`
 
-- `bash` user (default on MacOS or Linux):
+- For "Bash" users (default on macOS or Linux):
 
-    `echo 'want () { curl -sd "$*" https://want.now.sh | bash -s --; }' >> ~/.bashrc`
+  `echo 'want () { curl -sd "$*" https://want.unix.bio | bash -s --; }' >> ~/.bashrc`
 
-    `source ~/.bashrc`
-    
-- `fish` user:
+  `source ~/.bashrc`
+
+- For "fish" users:
 
   Insert the following command in `~/.config/fish/config.fish`
-  
+
   ```fish
   function want
-    curl -sd $argv https://want.now.sh | bash -s --
+    curl -sd $argv https://want.unix.bio | bash -s --
   end
   ```
-  
-  and run `source ~/.config/fish/config.fish`
 
-- use with sudo:
+  and run `source ~/.config/fish/config.fish`.
 
-    `echo 'want-sudo () { curl -sd "$*" https://want.now.sh | sudo bash -s --; }' >> ~/.bashrc`
+- With sudo (Not recommended):
 
-    `source ~/.bashrc`
+  `echo 'want-sudo () { curl -sd "$*" https://want.unix.bio | sudo bash -s --; }' >> ~/.bashrc`
 
-    and run `want-sudo`.
+  `source ~/.bashrc`
+
+  and run `want-sudo`.
 
 <br/>
 
 ### Run
 
-Just run `want` in your terminal.
+After completing the **Setup** steps above, jsut run `want`.
 
 <br/>
 
 ### Features
 
- - No packages, use immediately.
+- No packages, use immediately.
 
- - Without symbols: `want npm proxy on` == `want npm_proxy_on`.
+- Without symbols: `want npm proxy on` == `want npm_proxy_on`.
 
- - List all commands: `want ls`.
+- List all commands: `want ls`.
 
- - Auto search: returns similar results when not found.
+- Auto search: returns similar results when not found.
 
 <br/>
 
-
 ### LICENSE
-[MIT](LICENSE)
+
+[MIT](https://raw.githubusercontent.com/unix/want/master/LICENSE)
