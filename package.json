@@ -6,7 +6,7 @@
   "author": "unix <unix.bio@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "now dev",
-    "release": "now --prod"
+    "start": "vercel dev",
+    "release": "vercel --prod"
   }
 }
